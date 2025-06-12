@@ -26,4 +26,13 @@
             background-position: center;
         }
     </style>
+<script>
+    const lastModified = new Date (document.lastModified);
+    const formattedDate = lastModified.toLocaleString('en-US', {
+        year: 'numeric',
+        month: 'long'
+        day: 'numeric'
+        });
+        document.getElementById('lastModified').textContent = 'Last updated on: ${formattedDate}';
+    </script>
 </html>
