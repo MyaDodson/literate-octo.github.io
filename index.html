@@ -26,11 +26,12 @@
             background-position: center;
         }
     </style>
-<footer>
+<body>
+ <footer>
     <p id="lastModified"></p>
-</footer>
+ </footer>
     
-<script>
+ <script>
     const lastModified = new Date (document.lastModified);
     const formattedDate = lastModified.toLocaleString('en-US', {
         year: 'numeric',
@@ -39,4 +40,5 @@
         });
         document.getElementById('lastModified').textContent = 'Last updated on: ${formattedDate}';
     </script>
+</body>
 </html>
