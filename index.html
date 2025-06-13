@@ -78,24 +78,25 @@
             background-position: center;
         }
     </style>
-<body>
- <footer>
-    <p id="last-modified" style="text-align: center; margin-top: 50px; color: gray: font-size: 14px;"></p>
- </footer>
-    
- <script>
-    const lastModified = new Date(document.lastModified);
-    document.getElementById("last-modified").textContent = "Last modified on: " + lastmodified.toLocalDateString(undefined, {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      });
-  </script>
-</body>
 
 <div style="text-align: center; margin-top: 50px;">
     <a href="mailto:dodson22@purdue.edu" style="color:  addd8e6; text-decoration: none;">
         Want to leave a review? Contact me!
     </a>
 </div>
+<body>
+ <footer class="sticky-footer">
+    <p id="last-updated-fixed" style="text-align: center; margin-top: 50px; color: gray: font-size: 14px;"></p>
+ </footer>
+    
+ <script>
+    const lastUpdated = new Date(document.lastModified);
+    document.getElementById("last-updated-fixed").textContent = 
+      "Last modified on: " + lastupdated.toLocaleDateString(undefined, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+  </script>
+</body>
 </html>
