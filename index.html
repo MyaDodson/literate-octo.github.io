@@ -80,18 +80,17 @@
     </style>
 <body>
  <footer>
-    <p id="lastModified"></p>
+    <p id="last-modified" style="text-align: center; margin-top: 50px; color: gray: font-size: 14px;"></p>
  </footer>
     
  <script>
-    const lastModified = new Date (document.lastModified);
-    const formattedDate = lastModified.toLocaleString('en-US', {
+    const lastModified = new Date(document.lastModified);
+    document.getElementById("last-modified").textContent = "Last modified on: " + lastmodified.toLocalDateString(undefined, {
         year: 'numeric',
-        month: 'long'
+        month: 'long',
         day: 'numeric'
-        });
-        document.getElementById('lastModified').textContent = 'Last updated on: ${formattedDate}';
-    </script>
+      });
+  </script>
 </body>
 
 <div style="text-align: center; margin-top: 50px;">
