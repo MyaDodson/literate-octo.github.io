@@ -86,13 +86,13 @@
 </div>
 <body>
  <footer class="sticky-footer">
-    <p id="last-updated-fixed" style="text-align: center; margin-top: 50px; color: gray: font-size: 14px;"></p>
+    <p id="last-updated-fixed" style="text-align: center; margin-top: 50px; color: gray; font-size: 14px;"></p>
  </footer>
     
  <script>
     const lastUpdated = new Date(document.lastModified);
     document.getElementById("last-updated-fixed").textContent = 
-      "Last modified on: " + lastupdated.toLocaleDateString(undefined, {
+      "Last modified on: " + lastUpdated.toLocaleDateString(undefined, {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
